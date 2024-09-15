@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="root">
+      <!-- this tag will be overiidden by root.render in react -->
+      <h1>Hello World!</h1>
+    </div>
+
+
+    <!-- injecting react using cdn -->
+
+    <!-- 2 file injected are
+    1) react core file
+    2) react dom file for manipulation dom -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- React should be imported before this -->
+    <script src="./App.js"></script>
+
+
+    <!-- hello world using react -->
+
+    <!-- <script>
+        const heading = React.createElement("h1", {} , "Hello World from React");
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script> -->
+
+
+    <!-- hello world using js -->
+
+    <!-- <script>
+    const heading = document.createElement("H1");
+    heading.innerHTML = "Hello World From Javascript";
+
+    const root = document.getElementById("root");
+    root.append(heading);
+    </script> -->
+  </body>
+</html>
